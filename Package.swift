@@ -9,7 +9,7 @@ let package = Package(
     ],
     products: [
         .library(
-            name: "libswiftFaceKit",
+            name: "FaceKit",
             type: .dynamic,
             targets: ["FaceKit"]
         ),
