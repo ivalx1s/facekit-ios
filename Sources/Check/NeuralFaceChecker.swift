@@ -1,6 +1,6 @@
 import Foundation
 import UIKit
-@_implementationOnly import TensorFlowLite
+import TensorFlowLite
 
 /// This checker verifies face using neural networks
 public class NeuralFaceChecker: FaceChecker {
@@ -75,7 +75,7 @@ public class NeuralFaceChecker: FaceChecker {
     }
     
     private static func initializeInterpreter() throws -> Interpreter {
-        let model = Bundle(for: NeuralFaceChecker.self).path(forResource: "FaceAntiSpoofing", ofType: "tflite")!
+        let model = Bundle.module.path(forResource: "FaceAntiSpoofing", ofType: "tflite")!
 
         let interpreter = try Interpreter(
             modelPath: model,

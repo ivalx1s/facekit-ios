@@ -9,7 +9,7 @@ let package = Package(
     ],
     products: [
         .library(
-            name: "FaceKit",
+            name: "libswiftFaceKit",
             type: .dynamic,
             targets: ["FaceKit"]
         ),
@@ -19,7 +19,11 @@ let package = Package(
         .target(
             name: "FaceKit",
             dependencies: Package.facekitDeps,
-            path: "Sources"
+            path: "Sources",
+            resources: [
+                .copy("Resources/MLModels/FaceAntiSpoofing.tflite"),
+                .copy("Resources/MLModels/MobileFaceNet.tflite"),
+            ]
         ),
     ]
 )

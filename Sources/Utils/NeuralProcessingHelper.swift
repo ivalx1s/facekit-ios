@@ -1,5 +1,5 @@
 import Foundation
-@_implementationOnly import TensorFlowLite
+import TensorFlowLite
 
 extension Array where Element == Delegate {
     static var processingDelegates: [Delegate] {

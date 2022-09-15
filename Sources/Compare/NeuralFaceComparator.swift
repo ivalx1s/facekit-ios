@@ -1,6 +1,6 @@
 import Foundation
 import UIKit
-@_implementationOnly import TensorFlowLite
+import TensorFlowLite
 
 /// Compare faces using neural network
 public class NeuralFaceComparator: FaceComparator {
@@ -121,7 +121,7 @@ public class NeuralFaceComparator: FaceComparator {
     }
     
     private static func initializeInterpreter() throws -> Interpreter {
-        let model = Bundle(for: NeuralFaceComparator.self).path(forResource: "MobileFaceNet", ofType: "tflite")!
+        let model = Bundle.module.path(forResource: "MobileFaceNet", ofType: "tflite")!
         
         let interpreter = try Interpreter(
             modelPath: model,
