@@ -5,7 +5,7 @@
       "kind" : "remoteSourceControl",
       "location" : "git@github.com:ivalx1s/swift-tensorflowlite-spm.git",
       "state" : {
-        "revision" : "9aadcfd82bd014bc3f6a3b86f310f86a5b06d397",
+        "revision" : "846d7b7ec3f663834ec60a2e40fb9254c73a29cc",
         "version" : "2.7.0"
       }
     }

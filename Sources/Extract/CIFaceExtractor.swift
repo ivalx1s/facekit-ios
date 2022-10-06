@@ -9,10 +9,9 @@ public class CIFaceExtractor: FaceExtractor {
     }
     
     public func extract(_ image: UIImage) -> FaceExtractResult {
-        let context = CIContext()
         let detector = CIDetector(
             ofType: CIDetectorTypeFace,
-            context: context,
+            context: nil,
             options: [CIDetectorAccuracy: CIDetectorAccuracyHigh]
         )!
         let features = detector
