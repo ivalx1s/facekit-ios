@@ -39,7 +39,7 @@ extension Package {
     
     static var facekitDeps: [Target.Dependency] {
         [
-            .product(name: "TensorFlowLite", package: "swift-tensorflowlite-spm"),
+            .product(name: "TensorFlowLite", package: "swift-tensorflowlite"),
         ]
     }
 }
