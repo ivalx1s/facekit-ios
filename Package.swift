@@ -33,7 +33,7 @@ let package = Package(
 extension Package {
     static var remoteDeps: [Package.Dependency] {
         [
-            .package(url: "git@github.com:ivalx1s/swift-tensorflowlite-spm.git", from: "2.7.0"),
+            .package(url: "git@github.com:darwell-inc/swift-tensorflowlite.git", from: "2.7.0"),
         ]
     }
     
